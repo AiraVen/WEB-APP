@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeweluxe - Bootstrap</title>
+
+  <!-- Bootstrap CSS (comment out to see plain HTML) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main-content">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+  <a class="navbar-brand text-start" href="bootstrap.html">← Jeweluxe</a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><span class="nav-link active" style="cursor:default;">Home</span></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">🛒 Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="text-center text-white py-5 bg-dark" style="background:url(Video/wallpaper.jpg) center/cover no-repeat;">
+    <div class="container">
+      <h1 class="display-4">Shine Bright with Jeweluxe</h1>
+      <p class="lead">Discover timeless jewelry for every occasion!</p>
+    </div>
+    </header>
+
+  <section class="container py-5">
+    <!-- Tabs navigation -->
+    <ul class="nav nav-tabs justify-content-center mb-4" id="productTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="bracelets-tab" data-bs-toggle="tab" data-bs-target="#bracelets" type="button" role="tab" aria-controls="bracelets" aria-selected="false">Bracelets</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="earrings-tab" data-bs-toggle="tab" data-bs-target="#earrings" type="button" role="tab" aria-controls="earrings" aria-selected="false">Earrings</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="necklaces-tab" data-bs-toggle="tab" data-bs-target="#necklaces" type="button" role="tab" aria-controls="necklaces" aria-selected="false">Necklaces</button>
+      </li>
+    </ul>
+    <!-- Tabs content -->
+    <div class="tab-content" id="productTabsContent">
+      
+      <!-- All products -->
+      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+          <!-- Bracelets -->
+          <div class="col"><div class="card h-100 text-center product-card-square"><img src="Video/Bracelet/lotusbrace.jpg" class="card-img-top" alt="Lotus Bracelet"><div class="card-body"><h5 class="card-title">Lotus Bracelet</h5><p class="card-text text-muted mb-2">₱2,345.00</p><a href="#" class="btn btn-primary w-100">Add to Cart</a></div></div></div>
+          <div class="col"><div class="card h-100 text-center product-card-square"><img src="Video/Bracelet/pearlbrace.jpg" class="card-img-top" alt="Pearl Bracelet"><div class="card-body"><h5 class="card-title">Pearl Bracelet</h5><p class="card-text text-muted mb-2">₱1,600.00</p><a href="#" class="btn btn-primary w-100">Add to Cart</a></div></div></div>
+          <div class="col"><div class="card h-100 text-center product-card-square"><img src="Video/Bracelet/tiednotbrace.jpg" class="card-img-top" alt="Tied Knot Bracelet"><div class="card-body"><h5 class="card-title">Tied Knot Bracelet</h5><p class="card-text text-muted mb-2">₱1,800.00</p><a href="#" class="btn btn-primary w-100">Add to Cart</a></div></div></div>
+          <!-- Earrings -->
+          <div class="col"><div class="card h-100 text-center product-card-square"><img src="Video/Bracelet/earlotus.jpg" class="card-img-top" alt="Lotus Earrings"><div class="card-body"><h5 class="card-title">Lotus Earrings</h5><p class="card-text text-muted mb-2">₱2,345.00</p><a href="#" class="btn btn-primary w-100">Add to Cart</a></div></div></div>
+          <div class="col"><div class="card h-100 text-center product-card-square"><img src="Video/Bracelet/earpearl.jpg" class="card-img-top" alt="Pearl Earrings"><div class="card-body"><h5 class="card-title">Pearl Earrings</h5><p class="card-text text-muted mb-2">₱1,600.00</p><a href="#" class="btn btn-primary w-80">Add to Cart</a></div></div></div>
+          <div class="col"><div class="card h-100 text-center product-card-square"><img src="Video/Bracelet/eartied.jpg" class="card-img-top" alt="Tied Earrings"><div class="card-body"><h5 class="card-title">Tied Earrings</h5><p class="card-text text-muted mb-2">₱1,600.00</p><a href="#" class="btn btn-primary w-100">Add to Cart</a></div></div></div>
+          <!-- Necklaces -->
+          <div class="col"><div class="card h-100 text-center product-card-square"><img src="Video/Bracelet/necklotus.jpg" class="card-img-top" alt="Lotus Necklace"><div class="card-body"><h5 class="card-title">Lotus Necklace</h5><p class="card-text text-muted mb-2">₱2,345.00</p><a href="#" class="btn btn-primary w-100">Add to Cart</a></div></div></div>
+          <div class="col"><div class="card h-100 text-center product-card-square"><img src="Video/Bracelet/neckpearl.jpg" class="card-img-top" alt="Pearl Necklace"><div class="card-body"><h5 class="card-title">Pearl Necklace</h5><p class="card-text text-muted mb-2">₱1,600.00</p><a href="#" class="btn btn-primary w-100">Add to Cart</a></div></div></div>
+          <div class="col"><div class="card h-100 text-center product-card-square"><img src="Video/Bracelet/necktied.jpg" class="card-img-top" alt="Necklace Tied Knot"><div class="card-body"><h5 class="card-title">Necklace Tied Knot</h5><p class="card-text text-muted mb-2">₱2,499.00</p><a href="#" class="btn btn-primary w-100">Add to Cart</a></div></div></div>
+        </div>
+      </div>
+         
+      <!-- Bracelets products -->
+      <div class="tab-pane fade" id="bracelets" role="tabpanel" aria-labelledby="bracelets-tab">
+        <div class="row g-4">
+          <div class="col">
+            <div class="card h-100 text-center product-card-large-square">
+              <img src="Video/Bracelet/lotusbrace.jpg" class="card-img-top" alt="Lotus Bracelet">
+              <div class="card-body">
+                <h5 class="card-title">Lotus Bracelet</h5>
+                <p class="card-text text-muted mb-2">₱2,345.00</p>
+                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center product-card-large-square">
+              <img src="Video/Bracelet/pearlbrace.jpg" class="card-img-top" alt="Pearl Bracelet">
+              <div class="card-body">
+                <h5 class="card-title">Pearl Bracelet</h5>
+                <p class="card-text text-muted mb-2">₱1,600.00</p>
+                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center product-card-large-square">
+              <img src="Video/Bracelet/tiednotbrace.jpg" class="card-img-top" alt="Tied Knot Bracelet">
+              <div class="card-body">
+                <h5 class="card-title">Tied Knot Bracelet</h5>
+                <p class="card-text text-muted mb-2">₱1,800.00</p>
+                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+         
+      <!-- Earrings products -->
+      <div class="tab-pane fade" id="earrings" role="tabpanel" aria-labelledby="earrings-tab">
+        <div class="row g-4">
+          <div class="col">
+            <div class="card h-100 text-center product-card-large-square">
+              <img src="Video/Bracelet/earlotus.jpg" class="card-img-top" alt="Lotus Earrings">
+              <div class="card-body">
+                <h5 class="card-title">Lotus Earrings</h5>
+                <p class="card-text text-muted mb-2">₱2,345.00</p>
+                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="Video/Bracelet/earpearl.jpg" class="card-img-top" alt="Pearl Earrings">
+              <div class="card-body">
+                <h5 class="card-title">Pearl Earrings</h5>
+                <p class="card-text text-muted mb-2">₱1,600.00</p>
+                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+              <img src="Video/Bracelet/eartied.jpg" class="card-img-top" alt="Tied   Earrings">
+              <div class="card-body">
+                <h5 class="card-title">Tied Earrings</h5>
+                <p class="card-text text-muted mb-2">₱1,600.00</p>
+                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Necklaces products -->
+    <div class="tab-pane fade" id="necklaces" role="tabpanel" aria-labelledby="necklaces-tab">
+        <div class="row g-4">
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="Video/Bracelet/necklotus.jpg" class="card-img-top" alt="Necklace Lotus">
+              <div class="card-body">
+                <h5 class="card-title">Lotus Necklace</h5>
+                <p class="card-text text-muted mb-2">₱2,345.00</p>
+                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="Video/Bracelet/neckpearl.jpg" class="card-img-top" alt="Pearl Necklace">  
+              <div class="card-body">
+                <h5 class="card-title">Pearl Necklace</h5>
+                <p class="card-text text-muted mb-2">₱1,600.00</p>
+                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="Video/Bracelet/necktied.jpg" class="card-img-top" alt="Necklace Tied Knot">
+              <div class="card-body">
+                <h5 class="card-title">Necklace Tied Knot</h5>
+                <p class="card-text text-muted mb-2">₱2,499.00</p>
+                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap JS (for tabs functionality) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    </div>
+  </section>
+<!-- FOOTER -->
+  </div>
+  <footer class="bg-light text-dark text-center py-3">
+    <p class="mb-0">© 2025 Jeweluxe | Exquisite Jewelry for You</p>
+  </footer>
+
+</body>
+</html>
+
