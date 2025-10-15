@@ -1,8 +1,3 @@
-/**
- * Form Validation Script for Jeweluxe
- * This script provides validation for all forms across the website
- */
-
 document.addEventListener('DOMContentLoaded', function() {
   // Initialize validation on all forms
   initializeValidation();
